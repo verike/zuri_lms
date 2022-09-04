@@ -19,4 +19,4 @@ class Choices(models.Model):
     vote = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.choice_answer
+        return f"{self.question} ----> {self.choice_answer}"
